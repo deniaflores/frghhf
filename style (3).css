@@ -299,3 +299,76 @@ ul li #sub:hover{
     filter: blur(18px);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🔥 Fix menú siempre visible y horizontal en móviles */
+@media (max-width: 800px) {
+  nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  nav ul li {
+    flex: 0 0 auto; /* evita que se encojan */
+  }
+}
