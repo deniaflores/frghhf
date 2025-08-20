@@ -24,6 +24,130 @@
         overflow: hidden;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .parent {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 20px;
+  }
+
+  /* 👇 Mantener nav en línea igual que en PC */
+  .parent nav {
+    flex-direction: row; /* cambiado de column a row */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: row; /* cambiado de column a row */
+    align-items: center;
+    width: auto;
+    gap: 10px;
+    margin-top: 0; /* quitado margen que lo bajaba */
+  }
+
+  nav ul li a,
+  ul li #sub {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .main_content {
+    flex-direction: column;
+    height: auto;
+  }
+  .main_content .left,
+  .main_content .right {
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .main_content .right {
+    padding-left: 0;
+  }
+  .right img,
+  .right video {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transform: none;
+  }
+  .gradient {
+    width: 200px;
+    height: 200px;
+    top: 60%;
+    left: 50%;
+    filter: blur(30px);
+  }
+}
+
 .parent nav{
         display:flex;
         justify-content: space-between;
@@ -292,3 +416,4 @@ ul li #sub:hover{
     filter: blur(18px);
   }
 }
+
