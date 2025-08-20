@@ -1,188 +1,188 @@
 *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
 }
 
 .container{
-        width:100%;
-        height: 100vh;
-        background:linear-gradient(90deg,rgb(247, 245, 245),rgb(5,1,18),rgb(20, 20, 20));
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(90deg,rgb(247, 245, 245),rgb(5,1,18),rgb(20, 20, 20));
 }
 
 .parent{
-        width: 80%;
-        height: 90%;
-        position:absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background-color: #f7f1f1;
-        box-shadow: 5px 5px 20px black;
-        color: #e6e6e6;
-        overflow: hidden;
+    width: 80%;
+    height: 90%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f7f1f1;
+    box-shadow: 5px 5px 20px black;
+    color: #e6e6e6;
+    overflow: hidden;
 }
 
 .parent nav{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 50px;
-        height: 15%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    height: 15%;
 }
 
 nav h1{
-        font-size: 35px;
-        font-weight: 600;
-        margin-left: 40px;
-        color: #014728;
-        position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 40px;
+    color: #014728;
+    position: relative;
 }
 
 nav h1::before{
-        content: '';
-        width:20px;
-        height: 20px;
-        position: absolute;
-        top: 50%;
-        left: -40px;
-        transform: translateY(-50%);
-        background:linear-gradient(90deg,rgb(28, 9, 114),rgb(214, 214, 255));
+    content: '';
+    width:20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    background:linear-gradient(90deg,rgb(28, 9, 114),rgb(214, 214, 255));
 }
 
 nav ul{
-        display: flex;
+    display: flex;
 }
 
 nav ul li{
-        list-style-type: none;
+    list-style-type: none;
 }
 
 ul li a{
-        text-decoration: none;
-        padding: 5px 20px;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 14px;
-        color: white;
-        transition: 0.5s ease;
+    text-decoration: none;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    transition: 0.5s ease;
 }
 
 ul li a:hover{
-        text-decoration: underline;
-        color: rgb(255, 224, 46);
+    text-decoration: underline;
+    color: rgb(255, 224, 46);
 }
 
 ul li #sub{
-        text-decoration: none;
-        color: white;
-        background-image: linear-gradient(90deg,#c04848,#480048,#c04848);
-        margin: 10px;
-        padding: 10px 30px;
-        text-align: center;
-        transition: 0.5s;
-        background-size: 200% auto;
-        border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(90deg,#c04848,#480048,#c04848);
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 20px;
 }
 
 ul li #sub:hover{
-        background-position: right center;
+    background-position: right center;
 }
 
 .parent .main_content{
-        display: flex;
-        height: 85%;
+    display: flex;
+    height: 85%;
 }
 
 .main_content .left{
-        width: 50%;
-        height: 100%;
-        padding: 40px 80px;
+    width: 50%;
+    height: 100%;
+    padding: 40px 80px;
 }
 
 .left h3{
-        font-weight: 600;
-        font-size: 25px;
-        text-transform: uppercase;
-        margin-top: 40px;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 40px;
 }
 
 .left h1{
-        font-size: 55px;
-        font-weight: 900;
-        margin-bottom: 20px;
-        line-height: 60px;
-        text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
 }
 
 .left h1 span{
-        color: yellow;
+    color: yellow;
 }
 
 .left p{
-        font-size: 12px;
-        font-weight: 400;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .left h2{
-        text-decoration: underline;
-        margin: 10px 0;
-        font-weight: 500;
+    text-decoration: underline;
+    margin: 10px 0;
+    font-weight: 500;
 }
 
 .left button{
-        padding: 7px 15px;
-        border-radius: 5px;
-        font-size: 12px;
-        border:none;
-        outline:none;
-        letter-spacing: 1px;
-        margin-top: 40px;
-        background-color: #033677;
-        color: white;
-        cursor: pointer;
-        transition: 0.5s ease;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    border:none;
+    outline:none;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    background-color: #033677;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .left button:hover{
-        background-color: rgb(42,0,93);
-        box-shadow: 0 0 10px white;
+    background-color: rgb(42,0,93);
+    box-shadow: 0 0 10px white;
 }
 
 .main_content .right{
-        width: 60%;
-        height: 100%;
-        padding-left: 100px;
-        overflow: hidden;
+    width: 60%;
+    height: 100%;
+    padding-left: 100px;
+    overflow: hidden;
 }
 
 .right img{
-        width: 380px;
-        transform: translateY(-30px);
-        filter: saturate(120%);
+    width: 380px;
+    transform: translateY(-30px);
+    filter: saturate(120%);
 }
 
 .right video{
-        width: 300px;
-        height: 600px;
-        transform: translateY(-30px);
-        filter: saturate(120%);
-        border-radius: 10px;
+    width: 300px;
+    height: 600px;
+    transform: translateY(-30px);
+    filter: saturate(120%);
+    border-radius: 10px;
 }
 
 .gradient{
-        width: 350px;
-        height: 350px;
-        position: absolute;
-        top: 48%;
-        left: 56%;;
-        border-radius: 50%;
-        background-color: rgb(0, 0, 0);
-        z-index: -1;
-        filter: blur(50px);
-        box-shadow: 
-        0 0 250px rgb(0, 0, 0),0 0 200px rgb(0, 0, 0),0 0 150px rgb(0, 0, 0);
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 48%;
+    left: 56%;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    filter: blur(50px);
+    box-shadow: 
+    0 0 250px rgb(0, 0, 0),0 0 200px rgb(0, 0, 0),0 0 150px rgb(0, 0, 0);
 }
 
 /* Responsive para tablets y móviles */
@@ -210,23 +210,33 @@ ul li #sub:hover{
     border-radius: 0;
     box-shadow: none;
     padding-bottom: 20px;
+    overflow: visible; /* ✅ para que no corte el menú */
   }
 
-  /* 👇 Mantener nav en línea igual que en PC */
+  /* ✅ Mantener nav horizontal */
   .parent nav {
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 10px;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center;
+    padding: 10px;
     height: auto;
+    overflow-x: auto; /* ✅ scroll lateral si no cabe */
   }
 
   nav ul {
-    flex-direction: row; 
-    align-items: center;
-    width: auto;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    width: 100%;
+    justify-content: center;
     gap: 10px;
-    margin-top: 0;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
   }
 
   nav ul li a,
@@ -297,78 +307,5 @@ ul li #sub:hover{
     top: 70%;
     left: 50%;
     filter: blur(18px);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 🔥 Fix menú siempre visible y horizontal en móviles */
-@media (max-width: 800px) {
-  nav ul {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    width: 100% !important;
-    justify-content: center;
-  }
-
-  nav ul li {
-    flex: 0 0 auto; /* evita que se encojan */
   }
 }
