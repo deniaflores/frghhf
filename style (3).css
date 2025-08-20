@@ -210,29 +210,31 @@ ul li #sub:hover{
     border-radius: 0;
     box-shadow: none;
     padding-bottom: 20px;
-    overflow: visible; /* ✅ para que no corte el menú */
+    overflow: visible; /* ✅ no corta menú */
   }
 
-  /* ✅ Mantener nav horizontal */
+  /* ✅ Menú siempre visible, horizontal y estético */
   .parent nav {
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    justify-content: center !important;
-    align-items: center;
+    background: #111;  /* fondo oscuro para contraste */
+    border-bottom: 1px solid #333;
     padding: 10px;
     height: auto;
-    overflow-x: auto; /* ✅ scroll lateral si no cabe */
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center;
+    overflow-x: auto;
   }
 
   nav ul {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    width: 100%;
+    gap: 15px;
     justify-content: center;
-    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding: 5px 0;
   }
 
   nav ul li {
@@ -241,7 +243,7 @@ ul li #sub:hover{
 
   nav ul li a,
   ul li #sub {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 16px;
   }
 
