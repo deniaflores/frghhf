@@ -291,7 +291,62 @@ ul li #sub:hover{
     width: 120px;
     height: 120px;
     top: 70%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          /* --- FIX menú en móviles --- */
+@media (max-width: 800px) {
+  nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+    justify-content: flex-start;
+    padding: 5px 0;
+    gap: 10px;
+    background: #000; /* 🔥 fondo oscuro para que resalten los links */
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
+  }
+}
     left: 50%;
     filter: blur(18px);
   }
 }
+
