@@ -26,7 +26,7 @@
 
 .parent nav{
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 30px 50px;
         height: 15%;
@@ -53,6 +53,7 @@ nav h1::before{
 
 nav ul{
         display: flex;
+        gap: 20px;
 }
 
 nav ul li{
@@ -201,6 +202,7 @@ ul li #sub:hover{
   }
 }
 
+/* --- FIX menú en móviles --- */
 @media (max-width: 800px) {
   .parent {
     flex-direction: column;
@@ -212,17 +214,25 @@ ul li #sub:hover{
     padding-bottom: 20px;
   }
   .parent nav {
-    flex-direction: column;
-    padding: 20px 10px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
     height: auto;
   }
 
   nav ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+    justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
   }
 
   nav ul li a,
@@ -291,62 +301,7 @@ ul li #sub:hover{
     width: 120px;
     height: 120px;
     top: 70%;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          /* --- FIX menú en móviles --- */
-@media (max-width: 800px) {
-  nav ul {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    width: 100% !important;
-    justify-content: flex-start;
-    padding: 5px 0;
-    gap: 10px;
-    background: #000; /* 🔥 fondo oscuro para que resalten los links */
-  }
-
-  nav ul li {
-    flex: 0 0 auto;
-  }
-}
     left: 50%;
     filter: blur(18px);
   }
 }
-
