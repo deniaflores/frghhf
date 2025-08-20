@@ -176,7 +176,7 @@ ul li #sub:hover{
         height: 350px;
         position: absolute;
         top: 48%;
-        left: 56%;;
+        left: 56%;
         border-radius: 50%;
         background-color: rgb(0, 0, 0);
         z-index: -1;
@@ -211,39 +211,53 @@ ul li #sub:hover{
     box-shadow: none;
     padding-bottom: 20px;
   }
+
   .parent nav {
     flex-direction: column;
     padding: 20px 10px;
     height: auto;
+    width: 100%;
   }
 
   nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     gap: 10px;
-    margin-top: 10px;
+    padding: 10px;
+    background-color: #014728; /* fondo para visibilidad */
+  }
+
+  nav ul li {
+    width: 100%;
   }
 
   nav ul li a,
   ul li #sub {
-    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
+    color: white;
+    text-align: left;
   }
 
   .main_content {
     flex-direction: column;
     height: auto;
   }
+
   .main_content .left,
   .main_content .right {
     width: 100%;
     padding: 20px 10px;
     text-align: center;
   }
+
   .main_content .right {
     padding-left: 0;
   }
+
   .right img,
   .right video {
     width: 90vw;
@@ -253,6 +267,7 @@ ul li #sub:hover{
     display: block;
     transform: none;
   }
+
   .gradient {
     width: 200px;
     height: 200px;
@@ -269,24 +284,29 @@ ul li #sub:hover{
     border-radius: 0;
     padding: 0;
   }
+
   .main_content .left,
   .main_content .right {
     padding: 10px 5vw;
   }
+
   .left h1 {
     font-size: 2rem;
     line-height: 2.3rem;
   }
+
   .left h3 {
     font-size: 1.1rem;
     margin-top: 10px;
   }
+
   .right img,
   .right video {
     width: 98vw;
     max-width: 98vw;
     height: auto;
   }
+
   .gradient {
     width: 120px;
     height: 120px;
